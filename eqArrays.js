@@ -5,7 +5,7 @@ const assertEqual = function (actual, expected) {
 };
 
 function eqArrays(arr1, arr2) {
-  if (arr1 == arr2.toString()) {
+  if (arr1.every((v, i) => v === arr2[i])) {
     return true;
   } else return false;
 }
