@@ -5,9 +5,11 @@ const assertEqual = function (actual, expected) {
 };
 
 function eqArrays(arr1, arr2) {
-  if (arr1.every((v, i) => v === arr2[i])) {
-    return true;
-  } else return false;
+  var i = arr1.length;
+  while (i--) {
+    if (arr1[i] !== arr2[i]) return false;
+  }
+  return true;
 }
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);

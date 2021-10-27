@@ -3,7 +3,6 @@ function assertArraysEqual(array1, array2) {
     console.log(`${array1} and ${array2} are equal!😀`);
   } else console.log(`${array1} and ${array2} are not equal!🥲`);
 }
-
 function eqArrays(arr1, arr2) {
   var i = arr1.length;
   while (i--) {
@@ -12,4 +11,14 @@ function eqArrays(arr1, arr2) {
   return true;
 }
 
-assertArraysEqual([1, 2, 3], [1, 2, 2]);
+function without(source, itemsToRemove) {
+  var removedArr = [];
+  var addedArr = [];
+  var i = source.length;
+  while (i--) {
+    if (source[i] !== itemsToRemove[i]) {
+      addedArr.push([source[i]]);
+    } else removedArr.push([source[i]]);
+  }
+  return addedArr;
+}
