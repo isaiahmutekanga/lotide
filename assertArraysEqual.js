@@ -12,4 +12,4 @@ function eqArrays(arr1, arr2) {
   return true;
 }
 
-assertArraysEqual([1, 2, 3], [1, 2, 2]);
+module.exports = assertArraysEqual;
