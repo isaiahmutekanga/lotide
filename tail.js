@@ -2,8 +2,8 @@ function tail(arr) {
   let newarr = [];
   newarr = arr.slice(1);
   return newarr;
-  //return arr[arr.length - 1]
 }
+console.log(tail(["Yo Yo", "Lighthouse", "Labs"]));
 
 // Test Case: Check the original array
 
