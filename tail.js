@@ -3,7 +3,7 @@ function tail(arr) {
   newarr = arr.slice(1);
   return newarr;
 }
-console.log(tail(["Yo Yo", "Lighthouse", "Labs"]));
+//console.log(tail(["Yo Yo", "Lighthouse", "Labs"]));
 
 // Test Case: Check the original array
 
